@@ -1,0 +1,101 @@
+:root{
+    --main-page-color: #af936C;
+    --secondary-page-color: #ecd1ab;
+    --darker-shade-color: #a5865c;
+    --text-color:#343434;
+
+    --header-font-family: 'Anton', sans-serif;
+    --par-font-family: 'Open Sauce',sans-serif;
+
+    --header-font-size:65px;
+    --par-font-size:16px;
+    --tittle-font-size: 25px;
+    --phrase-font-size:50px;
+
+    --button-border-radius:10px;
+
+}
+body{
+    background-color: var(--darker-shade-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--par-font-family);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navigation {
+    background-color: var(--main-page-color);
+    padding: 10px 20px;
+    position: fixed;
+    Top:0;
+    width: 100%;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+
+.navigation ul li {
+    margin-right: 20px;
+}
+.navigation ul li:hover {
+    background-color: var(--darker-shade-color);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.navigation ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--par-font-size);
+    border-radius: var(--button-border-radius);
+    padding:10px;
+    font-family: var(--header-font-family);
+}
+
+.header{
+    background-color: var(--main-page-color);
+    display: flex; 
+    align-items: center; 
+    padding: 0px;
+    height: 100vh;   
+}
+.header-image{
+    background-image:url(https://www.mensjournal.com/.image/t_share/MTk2MTM2MjA2MTY3OTc1MDU3/theres-no-shame-in-a-little-heel-strike.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:50%;
+    height:100%;
+    
+}
+.header-content{
+    width:50%;
+    text-align:right;
+    padding:0 20px;
+}
+
+h1{
+    font-family:var(--header-font-family);
+    color:var(--text-color); 
+    font-size:var(--tittle-font-size);
+    text-wrap: wrap;
+    margin:0;
+}
+
+h2{
+    font-family:var(--header-font-family);
+    color:var(--text-color); 
+    font-size:var(--header-font-size);
+    text-wrap: balance;
+    margin:0;
+}

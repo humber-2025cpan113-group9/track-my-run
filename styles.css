@@ -15,6 +15,7 @@
     --button-border-radius:10px;
 
 }
+
 body{
     background-color: var(--darker-shade-color);
     margin: 0;
@@ -27,8 +28,8 @@ body{
 }
 
 .navigation {
-    background-color: var(--main-page-color);
-    padding: 10px 20px;
+    background-color: var(--darker-shade-color);
+    padding: 10px 5px;
     position: fixed;
     Top:0;
     width: 100%;
@@ -36,7 +37,7 @@ body{
 
 .navigation ul {
     list-style: none;
-    margin: 20px;
+    margin: 10px;
     padding: 0;
     display: flex;
     justify-content: right;
@@ -47,10 +48,14 @@ body{
 .navigation ul li {
     margin-right: 20px;
 }
+
 .navigation ul li:hover {
-    background-color: var(--darker-shade-color);
-    transform: scale(1.05);
+    background-color: var(--main-page-color);
+    border-radius: var(--button-border-radius);
+    padding: 5px;
+    transform: scale(1);
     cursor: pointer;
+
 }
 
 .navigation ul li a {
@@ -65,23 +70,34 @@ body{
 .header{
     background-color: var(--main-page-color);
     display: flex; 
-    align-items: center; 
-    padding: 0px;
-    height: 100vh;   
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:space-between; 
+    padding: 0;
+    margin-bottom:100px;
+    min-height: 100vh;
+  
+   
 }
+
 .header-image{
-    background-image:url(https://www.mensjournal.com/.image/t_share/MTk2MTM2MjA2MTY3OTc1MDU3/theres-no-shame-in-a-little-heel-strike.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-width:500px;
     width:50%;
-    height:100%;
+    height: auto;
+    object-position: left;
+    object-fit:cover;
+    margin:0;
+   
     
 }
+
 .header-content{
     width:50%;
     text-align:right;
     padding:0 20px;
+    margin-top: 250px;
+    margin-left: auto;
+   
 }
 
 h1{
@@ -98,4 +114,23 @@ h2{
     font-size:var(--header-font-size);
     text-wrap: balance;
     margin:0;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stacks image & text on mobile */
+        align-items: center;
+        min-height: auto;
+    }
+
+    .header-content {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 0 15px;
+    }
 }

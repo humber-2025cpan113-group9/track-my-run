@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Track My Runs</title>
+</head>
+<body>
+     <!-- Navigation Section -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" id="highlight">Home</a></li>
+            <li><a><b>Fitness Test</b></a></li>
+            <li><a href="calendar.html" id="highlight">Calendar</a></li>
+            <li><a href="workouts.html" id="highlight">Workouts</a></li>
+            <li><a href="profile.html" id="highlight">Profile</a></li>
+        </ul>
+    </nav>
+
+
+    
+<!-- fitness quiz -->
+<form id="fitness-quiz">
+    <!--q1-->
+    <fieldset>
+        <legend><h4> 1. Whats are your run goals </h4></legend>
+        <label><input type="checkbox" name="goal" value="5km" ></label> 5k</label><br>
+        <label><input type="checkbox" name="goal" value="10km" ></label> 10k </label><br>
+        <label><input type="checkbox" name="goal" value="half-marathon" ></label> Half Marathon </label><br>
+        <label><input type="checkbox" name="goal" value="marathon" ></label> Marathon</label><br>
+        <label><input type="checkbox" name="goal" value="build-fitness" ></label> Just build Fitness </label>
+    </fieldset>
+    <!--q2-->
+  
+    <label for="day-quantity"><h4>2. How many days can you run?</h4></label><br>
+    <select name="day-quantity" id="day-quantity" required>
+        <option value="">--Please choose an option--</option>
+        <option value="1"> 1 day </option>
+        <option value="2"> 2 days </option>
+        <option value="3"> 3 days </option>
+        <option value="4"> 4 days </option>
+        <option value="5"> 5 days </option>
+    </select>
+    
+    <!--q3-->
+    <label for="long-run-day"><h4> 3. Best day for long runs?</h4></label>
+    <select name="long-run-day" id="long-run-day" required>
+        <option value="">--Please choose an option--</option>
+        <option value="monday"> Monday </option>
+        <option value="tuesday"> Tuesday </option>
+        <option value="wednesday"> Wednesday </option>
+        <option value="thursday"> Thursday </option>
+        <option value="friday"> Friday </option>
+        <option value="saturday"> Saturday </option>
+        <option value="sunday"> Sunday </option>
+    </select><br>
+    
+
+    <button type="submit" class="btn"> Result</button>
+
+</form>
+<!-- need to know link this info with a script where can generate a workout for you based on the workout page  and add to your week schedule-->
+</body>
+</html>

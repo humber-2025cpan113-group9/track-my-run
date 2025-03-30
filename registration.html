@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Track My Runs</title>
+</head>
+<body>
+     <!-- Navigation Section -->
+     <nav class="navigation">
+        <ul>
+            <li><a href="index.html" id="highlight">Home</a></li>
+            <li><a href="login.html" id="highlight">Login</a></li>
+            <li><a><b>Registration</b></a></li>
+        </ul>
+</nav>
+
+<div id ="image">
+<label id="profile-image">Profile Image</label>
+<input type="file" id="profile-image" name="avatar" accept="image/png, image/jpeg" />
+<img src="profileImage.webp" alt="profile image" loading="lazy">
+</div>
+    
+    <form id="registration-form" action="#" method="POST">
+        
+        <div id="firstName">
+        <label for="firstName">First Name*:</label> 
+        <input type="text" id="firstName" name="firstName" placeholder="First Name"><br>
+        </div>
+
+        <div id="lastName">
+        <label for="lastName">Last Name*:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name"><br>
+        </div> 
+        
+        <div id="registration">
+        <label for="email">Email*:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com"><br>
+        
+        <label for="password">Password*:</label>
+        <input type="password" id="password" name="password" placeholder="password"><br>
+        
+
+        <label for="password">Verify Password*:</label>
+        <input type="password" id="password" name="password" placeholder="password"><br>
+        </div>
+        
+        
+    
+        <button type="submit" class="btn">Register</button>
+       
+
+        
+        
+        
+    </form>
+
+</body>
+</html>

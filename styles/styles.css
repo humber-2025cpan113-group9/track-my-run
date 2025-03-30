@@ -1,7 +1,7 @@
 :root{
-    --main-page-color: #af936C;
-    --secondary-page-color: #ecd1ab;
-    --darker-shade-color: #a5865c;
+    --main-page-color: #d5d1ca;
+    --secondary-page-color: #dbd7d1;
+    --darker-shade-color: #9f9b98;
     --text-color:#343434;
 
     --header-font-family: 'Anton', sans-serif;
@@ -17,7 +17,7 @@
 }
 
 body{
-    background-color: var(--darker-shade-color);
+    background-color: var(--main-page-color);
     margin: 0;
     padding: 0;
     font-family: var(--par-font-family);
@@ -49,7 +49,7 @@ body{
     margin-right: 20px;
 }
 
-.navigation ul li:hover {
+#highlight:hover {
     background-color: var(--main-page-color);
     border-radius: var(--button-border-radius);
     padding: 5px;
@@ -61,7 +61,7 @@ body{
 .navigation ul li a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: var(--par-font-size);
+    font-size: var(--tittle-font-size);
     border-radius: var(--button-border-radius);
     padding:10px;
     font-family: var(--header-font-family);
@@ -116,21 +116,20 @@ h2{
     margin:0;
 }
 
+.btn {
+    background-color: var(--main-page-color);
+    color: rgb(13, 13, 12);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
 
 
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Stacks image & text on mobile */
-        align-items: center;
-        min-height: auto;
-    }
-
-    .header-content {
-        width: 100%;
-        text-align: center;
-        margin-top: 40px;
-        margin-left: 0;
-        padding: 0 15px;
-    }
-}

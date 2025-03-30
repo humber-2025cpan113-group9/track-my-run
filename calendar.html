@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="script.js"></script>
+
+    <title>Tracker My Runs</title>
+</head>
+<body>
+    <!-- navagation section-->
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html" id="highlight">Home</a></li>
+            <li><a href="quiz.html" id="highlight">Fitness Test</a></li>
+            <li><a><b>Calendar</b></a></li>
+            <li><a href="workouts.html" id="highlight">Workouts</a></li>
+            <li><a href="profile.html" id="highlight">Profile</a></li>
+        </ul>
+    </nav>
+
+    
+ <!-- schedule -->
+ <div id="schedule">
+    <h5> Week Layout</h5>
+    <table>
+        <thead>
+            <th>Day</th>
+            <th>Workout</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sunday</td>
+                <td><input type="text" id="sunday-workout" class="workout-input"></td> 
+                <td><button class="add-btn" data-day="sunday"> + </button></td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td><input type="text" id="monday-workout" class="workout-input"></td> 
+                <td><button class="add-btn" data-day="monday"> + </button></td>
+            </tr>  
+            <tr>
+                <td>Tuesday</td>
+                <td><input type="text" id="tuesday-workout" class="workout-input"></td> 
+                <td><button class="add-btn" data-day="tuesday"> + </button></td>
+            </tr>  
+            <tr>
+                <td>Wednesday</td>
+                <td><input type="text" id="wednesday-workout" class="workout-input"></td> 
+                <td><button class="add-btn" data-day="wednesday"> + </button></td>
+            </tr>  
+            <tr>
+                <td>Thursday</td>
+                <td><input type="text" id="thursday-workout" class="workout-input"></td> 
+                <td><button class="add-btn" data-day="thursday"> + </button></td>
+            </tr>  
+            <tr>
+                <td>Friday</td>
+                <td><input type="text" id="friday-workout" class="workout-input"></td> 
+                <td><button class="add-btn" data-day="friday"> + </button></td>
+            </tr>  
+            <tr>
+                <td>Saturday</td>
+                <td><input type="text" id="saturday-workout" class="workout-input"></td> 
+                <td><button class="add-btn" data-day="saturday"> + </button></td>
+            </tr>      
+        </tbody>
+    </table>
+</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+/* ===== Base Styles ===== */
+:root {
+    --main-page-color: #f5f7fa;
+    --primary-color: #4a6fa5;
+    --secondary-color: #166088;
+    --accent-color: #4fc3f7;
+    --text-color: #333;
+    --light-gray: #e0e0e0;
+    --white: #fff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--main-page-color);
+  }
+  
+  /* ===== Navigation ===== */
+  .navigation {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+  .navigation li {
+    margin-left: 2rem;
+  }
+  
+  .navigation a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navigation a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* ===== Header Section ===== */
+  .header {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    padding: 2rem;
+    background-color: var(--main-page-color);
+  }
+  
+  .header-image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .header-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  
+  .header-content {
+    flex: 1;
+    padding: 0 4rem;
+    text-align: right;
+  }
+  
+  .header-content h1 {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .header-content h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 400;
+  }
+  
+  /* ===== About Section ===== */
+  .section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #about {
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin: 2rem auto;
+    padding: 3rem;
+  }
+  
+  #about h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  #about p {
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ===== Forms ===== */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.2);
+  }
+  
+  /* ===== Buttons ===== */
+  .btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* ===== Quiz & Schedule ===== */
+  #fitness-quiz {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+  }
+  
+  fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  legend h4 {
+    margin-bottom: 1rem;
+  }
+  
+  #schedule {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .workout-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+  }
+  
+  .add-btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .add-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      min-height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .header-image,
+    .header-content {
+      max-width: 100%;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .header-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .header-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .navigation ul {
+      justify-content: center;
+    }
+  
+    .navigation li {
+      margin-left: 1rem;
+    }
+  }
+  
+  /* ===== Utility Classes ===== */
+  .hidden {
+    display: none;
+  }

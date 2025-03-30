@@ -32,11 +32,18 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
     border-bottom: 1px solid var(--secondary-page-color);
     z-index: 1000;
+}
+
+/* Center navigation content */
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -54,6 +61,12 @@ body {
     padding: 0;
 }
 
+/* Ensure each nav item aligns vertically */
+.navigation ul li {
+    display: flex;
+    align-items: center;
+}
+
 .navigation ul li a {
     text-decoration: none;
     color: var(--text-color);
@@ -67,11 +80,12 @@ body {
     border-radius: var(--button-border-radius);
 }
 
+/* Make logout button padding match links for proper vertical alignment */
 .logout-btn {
     background-color: var(--text-color);
     color: #fff;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
     font-size: 16px;
     border-radius: var(--button-border-radius);
     cursor: pointer;
@@ -128,4 +142,61 @@ body {
 .hero-content p {
     font-size: var(--par-font-size);
     margin-bottom: 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+    .navigation ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navigation ul li a,
+    .logout-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--secondary-page-color);
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-container ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-container ul li a:hover {
+    color: var(--button-hover-color);
 }

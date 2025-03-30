@@ -3,49 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Track My Run</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts/script.js"></script>
-
-    <title>Tracker My Runs </title>
 </head>
 <body>
-   
-    <!-- Navigation Section -->
     <nav class="navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Who We Are</a></li>
-                <li><a href="#profile">Login</a></li>
-            </ul>
+        <div class="logo">Track My Run</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><button class="logout-btn">Logout</button></li>
+        </ul>
     </nav>
 
-
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <header class="header">
-
-            <div class="header-image">
-                <img src="assets/RunImage.jpg" alt="runner" loading="lazy" >
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="assets/RunImage.jpg" alt="Running at sunset">
             </div>
-    
-            <div class="header-content">
-                <h1>TRACKER MY RUNS</h1>
+            <div class="hero-content">
+                <h1>Track My Runs</h1>
                 <h2>GET READY TO ACHIEVE YOUR GOAL</h2>
+                <p><strong>THIS IS WHERE YOU START YOUR RUNNING JOURNEY</strong></p>
+                <p>Track My Runs is where you can build your personalized training plan for your first 5K run to a marathon.</p>
+                <p>Track My Runs helps you navigate the details of setting up a weekly workout schedule to achieve your goal, regardless of your fitness level.</p>
             </div>
-        </header>   
+        </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h3>THIS IS WHERE YOU START YOUR RUNNING JOURNEY</h3>
-        <p>Tracker My Runs is where you can build your personalized training plan for your first 5K run to a marathon.</p>
-        <p>Tracker My Runs helps you navigate the details of setting up a weekly workout schedule to achieve your goal, regardless of your fitness level.</p>
-        <button type="button" id="registration-btn" class="btn">ENROLL</button>
-    
-
-    <!-- Registration Form -->
-    <form id="registration-form" class="hidden">
+<!-- Registration Form -->
+      <!-- <form id="registration-form" class="hidden">
         <div class="name">
             <label for="Name">Full Name:</label>
             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
@@ -69,38 +56,38 @@
                             
         <button type="submit" class="btn"> ENROLL </button>
 
-    </form>
+    </form> -->
 
     </section>
 
 
     <!-- Profile Section -->
-    <section id="profile" class="section">
+    <!-- <section id="profile" class="section"> -->
         <!-- fitness quiz -->
-        <form id="fitness-quiz">
+        <!-- <form id="fitness-quiz"> -->
             <!--q1-->
-            <fieldset>
+            <!-- <fieldset>
                 <legend><h4> 1. Whats are your run goals </h4></legend>
                 <label><input type="checkbox" name="goal" value="5km" ></label> 5k</label><br>
                 <label><input type="checkbox" name="goal" value="10km" ></label> 10k </label><br>
                 <label><input type="checkbox" name="goal" value="half-marathon" ></label> Half Marathon </label><br>
                 <label><input type="checkbox" name="goal" value="marathon" ></label> Marathon</label><br>
                 <label><input type="checkbox" name="goal" value="build-fitness" ></label> Just build Fitness </label>
-            </fieldset>
+            </fieldset> -->
             <!--q2-->
           
-            <label for="day-quantity"><h4>2. How many days can you run?</h4></label><br>
+            <!-- <label for="day-quantity"><h4>2. How many days can you run?</h4></label><br>
             <select name="day-quantity" id="day-quantity" required>
                 <option value="">--Please choose an option--</option>
                 <option value="1"> 1 day </option>
                 <option value="2"> 2 days </option>
                 <option value="3"> 3 days </option>
                 <option value="4"> 4 days </option>
-                <option value="5"> 5 days </option>
+                <option value="5"> 5 days </option> -->
             </select>
             
             <!--q3-->
-            <label for="long-run-day"><h4> 3. Best day for long runs?</h4></label>
+            <!-- <label for="long-run-day"><h4> 3. Best day for long runs?</h4></label>
             <select name="long-run-day" id="long-run-day" required>
                 <option value="">--Please choose an option--</option>
                 <option value="monday"> Monday </option>
@@ -111,15 +98,15 @@
                 <option value="saturday"> Saturday </option>
                 <option value="sunday"> Sunday </option>
             </select><br>
-            
-    
+             -->
+<!--     
             <button type="submit" class="btn"> Result</button>
 
-        </form>
+        </form> -->
   
 
         <!-- schedule -->
-        <div id="schedule">
+        <!-- <div id="schedule">
             <h5> Week Layout</h5>
             <table>
                 <thead>
@@ -166,7 +153,7 @@
                 </tbody>
             </table>
         </div>
-    </section>
-   
+    </section> -->
+    
 </body>
 </html>

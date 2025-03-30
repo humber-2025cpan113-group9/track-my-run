@@ -1,141 +1,131 @@
-:root{
-    --main-page-color: #af936C;
-    --secondary-page-color: #ecd1ab;
-    --darker-shade-color: #a5865c;
-    --text-color:#343434;
+:root {
+    --main-page-color: #f9f9f9;
+    --secondary-page-color: #eaeaea;
+    --darker-shade-color: #d1d1d1;
+    --text-color: #2e2e2e;
+    --accent-color: #5a6978;
 
-    --header-font-family: 'Anton', sans-serif;
-    --par-font-family: 'Open Sauce',sans-serif;
+    --header-font-family: 'Oswald', sans-serif;
+    --par-font-family: 'Poppins', sans-serif;
+    
+    --header-font-size: 60px;
+    --par-font-size: 18px;
+    --title-font-size: 28px;
+    --phrase-font-size: 50px;
 
-    --header-font-size:65px;
-    --par-font-size:16px;
-    --title-font-size: 25px;
-    --phrase-font-size:50px;
-
-    --button-border-radius:10px;
-
+    --button-border-radius: 8px;
+    --button-hover-color: #4a5a68;
+    --button-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-body{
-    background-color: var(--darker-shade-color);
-    margin: 5%;
-    padding: 5%;
+body {
+    background-color: var(--main-page-color);
+    margin: 0;
+    padding: 0;
     font-family: var(--par-font-family);
     color: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 .navigation {
-    background-color: var(--darker-shade-color);
-    padding: 10px 5px;
+    background-color: #fff;
+    padding: 15px 30px;
     position: fixed;
-    Top:0;
+    top: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid var(--secondary-page-color);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--header-font-family);
+    cursor: pointer;
 }
 
 .navigation ul {
     list-style: none;
-    margin: 10px;
-    padding: 0;
     display: flex;
-    justify-content: right;
     gap: 20px;
-}
-
-
-.navigation ul li {
-    margin-right: 20px;
-}
-
-.navigation ul li:hover {
-    background-color: var(--main-page-color);
-    border-radius: var(--button-border-radius);
-    padding: 5px;
-    transform: scale(1);
-    cursor: pointer;
-
+    margin: 0;
+    padding: 0;
 }
 
 .navigation ul li a {
-    color: var(--text-color);
     text-decoration: none;
-    font-size: var(--par-font-size);
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    background-color: var(--secondary-page-color);
     border-radius: var(--button-border-radius);
-    padding:10px;
-    font-family: var(--header-font-family);
 }
 
-.header{
-    background-color: var(--main-page-color);
-    display: flex; 
-    flex-direction: row;
+.logout-btn {
+    background-color: var(--text-color);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.hero {
+    padding: 100px 30px 50px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content:space-between; 
-    padding: 0;
-    margin-bottom:100px;
-    min-height: 100vh;
-  
-   
+    background-color: var(--main-page-color);
 }
 
-.header-image{
-    max-width:100%;
-    width:100%;
-    height: auto;
-    object-position: left;
-    object-fit:cover;
-    margin:0;
-   
-    
-}
-
-.header-content{
-    width:50%;
-    text-align:right;
-    padding:0 20px;
-    margin-top: 250px;
-    margin-left: auto;
-   
-}
-
-h1{
-    font-family:var(--header-font-family);
-    color:var(--text-color); 
-    font-size:var(--title-font-size);
-    text-wrap: wrap;
-    margin:0;
-}
-
-h2{
-    font-family:var(--header-font-family);
-    color:var(--text-color); 
-    font-size:var(--header-font-size);
-    text-wrap: balance;
-    margin:0;
-}
-
-
-
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Stacks image & text on mobile */
-        align-items: center;
-        min-height: auto;
-    }
-
-.header-image {
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
     width: 100%;
-    height: auto;
+    gap: 50px;
+    align-items: center;
 }
 
-    .header-content {
-        width: 100%;
-        text-align: center;
-        margin-top: 40px;
-        margin-left: 0;
-        padding: 0 15px;
-    }
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--button-shadow);
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-family: var(--header-font-family);
+    font-size: var(--title-font-size);
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.hero-content p {
+    font-size: var(--par-font-size);
+    margin-bottom: 15px;
 }

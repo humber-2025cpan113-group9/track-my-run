@@ -36,7 +36,7 @@ body {
     z-index: 1000;
 }
 
-/* Center navigation content */
+/* Navigation Bar */
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -61,7 +61,6 @@ body {
     padding: 0;
 }
 
-/* Ensure each nav item aligns vertically */
 .navigation ul li {
     display: flex;
     align-items: center;
@@ -80,7 +79,6 @@ body {
     border-radius: var(--button-border-radius);
 }
 
-/* Make logout button padding match links for proper vertical alignment */
 .logout-btn {
     background-color: var(--text-color);
     color: #fff;
@@ -144,7 +142,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Responsive adjustments for smaller screens */
+/* Adjustments */
 @media (max-width: 768px) {
     .nav-container {
         flex-wrap: wrap;
@@ -162,7 +160,7 @@ body {
     }
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
     background-color: var(--secondary-page-color);
     padding: 20px 30px;

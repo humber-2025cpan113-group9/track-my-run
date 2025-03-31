@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <nav class="navigation">
-        <div class="nav-container">
-          <div class="logo">Track My Run</div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Progress</a></li>
-            <li><button class="logout-btn">Logout</button></li>
-          </ul>
-        </div>
-    </nav>
+    
+<!-- Navigation Bar -->
+<nav class="navigation">
+    <div class="nav-container">
+      <div class="logo">Track My Run</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Progress</a></li>
+        <li><button class="logout-btn">Logout</button></li>
+      </ul>
+    </div>
+  </nav>
 
 <!-- Assessment -->
 
-<form class="assessment-form" id="assessment-form">
+<form class="assessment-form form-common" id="assessment-form">
     <h2>Assessment Form</h2>
-    
-    <!-- Question 1: Primary Goal -->
+
+<!-- Q1 -->
     <fieldset>
       <legend>1. What is your primary goal?</legend>
       <div class="radio-group">
@@ -46,7 +48,7 @@
       </div>
     </fieldset>
     
-    <!-- Question 2: Days per Week -->
+<!-- Q2 -->
     <fieldset>
       <legend>2. How many days a week can you typically run?</legend>
       <select name="daysPerWeek" required>
@@ -60,8 +62,8 @@
         <option value="7">7</option>
       </select>
     </fieldset>
-    
-<!-- Question 3: Preferred Day for Long Runs -->
+
+<!-- Q3 -->
     <fieldset>
       <legend>3. What is your preferred day for long runs?</legend>
       <select name="preferredLongRunDay" required>

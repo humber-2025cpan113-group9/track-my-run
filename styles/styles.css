@@ -242,15 +242,16 @@ form.registration-form input[type="password"] {
 
 form.registration-form input[type="submit"],
 form.registration-form input[type="reset"] {
-    background-color: var(--accent-color);
+    background-color: var(--text-color);
     color: #fff;
-    font-weight: 500;
-    padding: 10px 15px;
     border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
     border-radius: var(--button-border-radius);
+    transition: background-color 0.2s ease-in-out;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    margin: 5px;
 }
 
 form.registration-form input[type="submit"]:hover,
@@ -259,6 +260,99 @@ form.registration-form input[type="reset"]:hover {
 }
 
 .container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Assessment Styles */
+form.assessment-form {
+    background-color: #fff;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    border: 2px solid var(--secondary-page-color);
+    border-radius: var(--button-border-radius);
+    width: 100%;
+    max-width: 750px;
+    margin: 40px auto; 
+    font-weight: 400;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+form.assessment-form h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+form.assessment-form fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+form.assessment-form legend {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+form.assessment-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+form.assessment-form .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 15px;
+}
+
+form.assessment-form .radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+form.assessment-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form.assessment-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid var(--secondary-page-color);
+    border-radius: var(--button-border-radius);
+    font-size: 16px;
+}
+
+form.assessment-form input[type="submit"],
+form.assessment-form input[type="reset"] {
+    background-color: var(--text-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: var(--button-border-radius);
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form.assessment-form input[type="submit"]:hover,
+form.assessment-form input[type="reset"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+form.assessment-form .container {
     display: flex;
     gap: 1rem;
     width: 100%;

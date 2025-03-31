@@ -7,23 +7,48 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Track My Run</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="calendar.html">Calendar</a>
-            <a href="profile.html">Progress</a>
-            <button class="logout-btn">Logout</button>
-        </nav>
-    </header>
+    <nav class="navigation">
+        <div class="nav-container">
+          <div class="logo">Track My Run</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><button class="logout-btn">Logout</button></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- Registration Form -->
+    <form class="registration-form" id="registration-form">
+        <h2>Register</h2>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" name="email" placeholder="example@mail.com" required>
+        
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" placeholder="username" required>
+        
+        <label for="userPassword">Password:</label>
+        <input type="password" id="userPassword" name="password" placeholder="password" required>
+        
+        <div class="container">
+          <input type="submit" value="ENROLL">
+          <input type="reset" value="RESET">
+        </div>
+    </form>    
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <p>&copy; 2025 Track My Run. All rights reserved.</p>
             <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>

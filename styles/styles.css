@@ -197,3 +197,69 @@ footer {
 .footer-container ul li a:hover {
     color: var(--button-hover-color);
 }
+
+/* Registration Form */
+
+form.registration-form {
+    background-color: #fff;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+    border: 2px solid var(--secondary-page-color);
+    border-radius: var(--button-border-radius);
+    width: 100%;
+    max-width: 750px;
+    margin: 40px auto; 
+    font-weight: 400;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+form.registration-form h2 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+form.registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+form.registration-form input[type="text"],
+form.registration-form input[type="email"],
+form.registration-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid var(--secondary-page-color);
+    border-radius: var(--button-border-radius);
+    font-size: 16px;
+}
+
+form.registration-form input[type="submit"],
+form.registration-form input[type="reset"] {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin: 5px;
+}
+
+form.registration-form input[type="submit"]:hover,
+form.registration-form input[type="reset"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}

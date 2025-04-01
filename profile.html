@@ -29,18 +29,15 @@
 
     <header id= "userProfile">
         <div class="user-image">
-            <img src="assets/profileImage.webp" alt="person" loading="lazy" >
+            <img id= "display-userimg" src="assets/profileImage.webp" alt="person" loading="lazy" >
         </div>
         <div calss="userInfo">
-            <p>User Name:<input type="text"></p>
-            <p>Goal:<input type="text"></p>
+            <p id = "display-name">User Name:</p>
+            <p id = "display-goal">Goal:</p>
             <p>Progress</p>
             <input type = "range">
         </div>
-        <div class="userAchievements">
-            <!-- enter gadgets not sure how to this yet -->
-
-        </div>
+       
     </header>
 
     <div class = "runData">
@@ -50,10 +47,11 @@
 
         <!-- run data would be pulled here -->
 
-        <p> Summary</p>
+        
     </div>
 
     <div class = "runNotes">
+        <p> Summary</p>
         <textarea id="note" name="note" placeholder="Please enter your notes here" rows="5" spellcheck="true"></textarea> 
 
     </div>

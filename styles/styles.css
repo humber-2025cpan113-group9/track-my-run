@@ -28,12 +28,13 @@ body {
 
 .navigation {
     background-color: var(--secondary-page-color);
-    padding:0px;
+    padding: 15px 0;
     margin-bottom: 20px;
     position: fixed;
     top: 0;
     width: 100%;
     border-bottom: 1px solid var(--darker-shade-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
@@ -41,18 +42,18 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:10px 20px;
+    padding: 0 20px;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
     font-family: var(--header-font-family);
-    margin-left: 5px;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-left: 10px;
 }
 
 .navigation ul {
@@ -61,12 +62,11 @@ body {
     gap: 20px;
     margin: 0;
     padding: 0;
-    margin-right: 5px;
 }
 
 .navigation ul li {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 .navigation ul li a {
@@ -76,9 +76,8 @@ body {
     padding: 10px 15px;
     transition: background-color 0.2s ease-in-out;
 }
-
 #highlight:hover {
-    background-color: var(--secondary-page-color);
+    background-color: var(--darker-shade-color);
     border-radius: var(--button-border-radius);
 }
 
@@ -145,58 +144,95 @@ body {
     margin-bottom: 15px;
 }
 
-/* Adjustments */
-@media (max-width: 768px) {
-    .nav-container {
-        flex-wrap: wrap;
-    }
-    .navigation ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .navigation ul li a,
-    .logout-btn {
-        font-size: 14px;
-        padding: 8px 10px;
-    }
-}
 
 /* Footer */
 footer {
     background-color: var(--secondary-page-color);
     text-align: center;
-    padding: 10px; 
+    padding: 15px;
+    border-top: 2px solid var(--darker-shade-color);
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.footer-container {
-    max-width: 100%;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-}
-
 .footer-container p {
-    margin: 0;
     font-size: 14px;
+    margin: 5px 0;
 }
 
 .footer-container ul {
-    text-align: center;
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .footer-container ul li a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 14px;
-    text-align: center;
 }
 
 .footer-container ul li a:hover {
-    color: var(--button-hover-color);
+    color: var(--darker-shade-color);
 }
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+  
+    .logout-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+  
+    #userProfile {
+        padding: 60px 10px 30px;
+    }
+  
+    .userInfo input {
+        width: 100%;
+    }
+  
+    .runData, .runNotes {
+        width: 90%;
+    }
+    
+    #fitness-quiz {
+        width: 95%;
+    }
+    .workoutOptions h2 {
+        font-size: 24px;
+    }
+
+    .options {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    #schedule {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    #registration-form {
+        max-width: 90%;
+    }
+  }
+  

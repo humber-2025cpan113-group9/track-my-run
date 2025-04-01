@@ -1,0 +1,57 @@
+
+/* ====== Workouts Section ====== */
+.workoutOptions {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.workoutOptions h2 {
+    font-size: 28px;
+    font-family: var(--font-header);
+    margin-bottom: 20px;
+}
+
+/* Workout Grid */
+.options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Flip Card Effect */
+.items {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, background-color 0.3s;
+    cursor: pointer;
+    position: relative;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hover Effect */
+.items:hover {
+    background-color: var(--card-hover-bg);
+    transform: scale(1.05);
+}
+
+/* Flip Card Effect (Extra) */
+.items p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.items:hover p {
+    opacity: 1;
+}
+

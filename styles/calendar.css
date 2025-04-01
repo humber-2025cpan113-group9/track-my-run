@@ -1,0 +1,79 @@
+:root {
+    --secondary-page-color: #d3cece;
+    --text-color: #2e2e2e;
+    --accent-color: #5a6978;
+
+    --input-border-color: #ccc;
+    --border-color: #ddd;
+   
+    --header-font-family: 'Oswald', sans-serif;
+    --par-font-family: 'Poppins', sans-serif;
+    
+    --button-border-radius: 8px;
+    --button-hover-color: #4a5a68;
+    --button-color: #999b9d;
+    --button-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+/*Schedule Section*/
+#schedule {
+    max-width: 800px;
+    margin: 100px auto 40px;
+    background: var(--secondary-page-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/*Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+
+/* Input Fields */
+.workout-input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Add Button */
+.add-btn {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 6px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+
+

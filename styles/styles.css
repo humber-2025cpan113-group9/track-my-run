@@ -444,3 +444,11 @@
     background-color: #333;
   }
   
+  /* ===================== */
+    /* REGISTRATION */
+  /* ===================== */
+
+.register-link{
+  text-align: center;
+  padding: 20px;
+}

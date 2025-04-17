@@ -35,26 +35,27 @@
     font-size: var(--font-size-base);
     color: var(--primary-text);
   }
+
+  .main {
+    margin: 20px;
+    padding: 20px;
+  }
   
   /* ===================== */
   /*     NAVIGATION        */
   /* ===================== */
-  .navigation {
-    background-color: #fff;
-    padding: 15px 30px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid var(--secondary-bg);
-    z-index: 1000;
-  }
-  
   .nav-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  .navigation {
+    padding: 15px 0;
   }
   
   .logo {
@@ -213,6 +214,25 @@
   
   .footer-container ul li a:hover {
     color: var(--btn-hover-color);
+  }
+
+
+    /* ===================== */
+    /*       LOGIN        */
+  /* ===================== */
+
+  .register-link{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .login-form form-common{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--main-bg);
+    border-radius: var(--btn-border-radius);
+    box-shadow: var(--btn-shadow);
   }
   
   /* ===================== */

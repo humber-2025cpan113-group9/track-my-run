@@ -39,22 +39,18 @@
   /* ===================== */
   /*     NAVIGATION        */
   /* ===================== */
-  .navigation {
-    background-color: #fff;
-    padding: 15px 30px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid var(--secondary-bg);
-    z-index: 1000;
-  }
-  
   .nav-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  .navigation {
+    padding: 15px 0;
   }
   
   .logo {
@@ -424,3 +420,11 @@
     background-color: #333;
   }
   
+  /* ===================== */
+    /* REGISTRATION */
+  /* ===================== */
+
+.register-link{
+  text-align: center;
+  padding: 20px;
+}

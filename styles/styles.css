@@ -348,26 +348,27 @@
   /*       calendar        */
   /* ===================== */
 
-  #schedule{
-    max-width: 800px;
+  #schedule {
+    max-width: 1000px;
     margin: 100px auto 40px;
     background-color: var(--dark-bg);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    font-family: var(--font-family-body)
+    font-family: var(--font-family-body);
   }
-
+  
   #schedule h1 {
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
-    color: var(--accent)
+    color: var(--accent);
   }
-
+  
   table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
   }
   
   thead th {
@@ -375,20 +376,51 @@
     padding: 12px;
     font-size: 18px;
     border-bottom: 2px solid #ddd;
+    text-align: left;
   }
   
   td {
     padding: 10px;
     border-bottom: 1px solid #eee;
+    vertical-align: middle;
   }
   
-  input.workout-input {
+
+  select,
+  input[type="range"] {
     width: 100%;
-    padding: 8px 10px;
-    border: 1px solid #ccc;
+    padding: 6px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
   
  
+  .distance-marker{
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+ 
+  .btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 30px;
+  }
+  
+  .btn {
+    background-color: var(--primary-text);
+    color: #fff;
+    border: none;
+    font-size: var(--font-size-nav);
+    border-radius: var(--btn-border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    padding: 10px 20px;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+  }
   

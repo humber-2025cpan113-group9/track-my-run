@@ -17,7 +17,6 @@
         <div class="logo">Track My Run</div>
         <ul>
             <li><a href="index.html" id="highlight">Home</a></li>
-            <li><a href="assessment.html" id="highlight">Fitness Test</a></li>
             <li><a><b>Calendar</b></a></li>
             <li><a href="profile.html" id="highlight">Profile</a></li>
             <li><button class="logout-btn">Logout</button></li>
@@ -33,12 +32,12 @@
         <thead>
             <th>Day</th>
             <th>Workout</th>
-            <th>Action</th>
+            <th>Duration</th>
         </thead>
         <tbody>
             <tr>
                 <td>Sunday</td>
-                <td> <fieldset id="sunday-workout" class="workout-input">
+                <td> <fieldset id="sunday-workout" class="workout-input" data-day="sunday">
                     <select name="Workout" required>
                       <option value="">--Select Workout-</option>
                       <option value="1">Long Run</option>
@@ -54,15 +53,12 @@
                     <input type= "range" min="0" max="40" step="1" class="milage" data-day="sunday"></input>
                     <span class= "distance-marker" id="sunday-distance"> 0km</span>
                 </td>
-                <td>
-                    <input type= "range" min="0" max="240" step="10" class="time" data-day="sunday"></input>
-                    <span class= "time-marker" id="sunday-distance">0 min</span>
-                </td>
+             
 
             </tr>
             <tr>
                 <td>Monday</td>
-                <td> <fieldset id="monday-workout" class="workout-input">
+                <td> <fieldset id="monday-workout" class="workout-input" data-day="monday">
                     <select name="Workout" required>
                       <option value="">--Select Workout-</option>
                       <option value="1">Long Run</option>
@@ -78,14 +74,11 @@
                     <input type= "range" min="0" max="40" step="1" class="milage" data-day="monday"></input>
                     <span class= "distance-marker" id="monday-distance"> 0km</span>
                 </td>
-                <td>
-                    <input type= "range" min="0" max="240" step="10" class="time" data-day="monday"></input>
-                    <span class= "time-marker" id="monday-distance">0 min</span>
-                </td>
+               
             </tr>  
             <tr>
                 <td>Tuesday</td>
-                <td> <fieldset id="tuesday-workout" class="workout-input">
+                <td> <fieldset id="tuesday-workout" class="workout-input" data-day="tuesday">
                     <select name="Workout" required>
                       <option value="">--Select Workout-</option>
                       <option value="1">Long Run</option>
@@ -101,14 +94,11 @@
                     <input type= "range" min="0" max="40" step="1" class="milage" data-day="tuesday"></input>
                     <span class= "distance-marker" id="tuesday-distance"> 0km</span>
                 </td>
-                <td>
-                    <input type= "range" min="0" max="240" step="10" class="time" data-day="tuesday"></input>
-                    <span class= "time-marker" id="tuesday-distance">0 min</span>
-                </td>
+               
             </tr>  
             <tr>
                 <td>Wednesday</td>
-                <td> <fieldset id="wednesday-workout" class="workout-input">
+                <td> <fieldset id="wednesday-workout" class="workout-input" data-day="wednesday">
                     <select name="Workout" required>
                       <option value="">--Select Workout-</option>
                       <option value="1">Long Run</option>
@@ -124,14 +114,11 @@
                     <input type= "range" min="0" max="40" step="1" class="milage" data-day="wednesday"></input>
                     <span class= "distance-marker" id="wednesday-distance"> 0km</span>
                 </td>
-                <td>
-                    <input type= "range" min="0" max="240" step="10" class="time" data-day="wednesday"></input>
-                    <span class= "time-marker" id="wednesday-distance">0 min</span>
-                </td>
+               
             </tr>  
             <tr>
                 <td>Thursday</td>
-                <td> <fieldset id="thursday-workout" class="workout-input">
+                <td> <fieldset id="thursday-workout" class="workout-input"  data-day="thursday">
                     <select name="Workout" required>
                       <option value="">--Select Workout-</option>
                       <option value="1">Long Run</option>
@@ -147,14 +134,11 @@
                     <input type= "range" min="0" max="40" step="1" class="milage" data-day="thursday"></input>
                     <span class= "distance-marker" id="thursday-distance"> 0km</span>
                 </td>
-                <td>
-                    <input type= "range" min="0" max="240" step="10" class="time" data-day="thursday"></input>
-                    <span class= "time-marker" id="thursday-distance">0 min</span>
-                </td>
+               
             </tr>  
             <tr>
                 <td>Friday</td>
-                <td> <fieldset id="friday-workout" class="workout-input">
+                <td> <fieldset id="friday-workout" class="workout-input" data-day="friday">
                     <select name="Workout" required>
                       <option value="">--Select Workout-</option>
                       <option value="1">Long Run</option>
@@ -170,14 +154,11 @@
                     <input type= "range" min="0" max="40" step="1" class="milage" data-day="friday"></input>
                     <span class= "distance-marker" id="friday-distance"> 0km</span>
                 </td>
-                <td>
-                    <input type= "range" min="0" max="240" step="10" class="time" data-day="friday"></input>
-                    <span class= "time-marker" id="friday-time">0 min</span>
-                </td>
+               
             </tr>  
             <tr>
                 <td>Saturday</td>
-                <td> <fieldset id="saturday-workout" class="workout-input">
+                <td> <fieldset id="saturday-workout" class="workout-input" data-day="saturday">
                     <select name="Workout" required>
                       <option value="">--Select Workout-</option>
                       <option value="1">Long Run</option>
@@ -193,14 +174,18 @@
                     <input type= "range" min="0" max="40" step="1" class="milage" data-day="saturday"></input>
                     <span class= "distance-marker" id="saturday-distance"> 0km</span>
                 </td>
-                <td>
-                    <input type= "range" min="0" max="240" step="10" class="time" data-day="saturday"></input>
-                    <span class= "time-marker" id="saturday-time">0 min</span>
-                </td>
+             
             </tr>      
         </tbody>
     </table>
+
+    <div class="btn-container">
+        <button type="submit" class=btn id= calendar-btn > Save Workout</button>
+    </div>
+    
+
 </div>
+
 
 
 <!-- Footer -->

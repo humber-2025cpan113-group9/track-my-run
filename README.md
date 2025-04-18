@@ -8,7 +8,7 @@ see below our video on the build of our webpage.
  ## A home page Demonstration:
 our home page gives your a quick run down to what to expect from the assesment page. see below video for demonstration
 
-<video src="assets/welcome.mp4" controls width="500" height="300" ></video>
+<video width= "320" height="240" autoplay> <source src ="assets/welcome.mp4" type="video/mp4"> </video>
 
  ## A assessment Demonstration:
 we have setup an assement page where we asked the runners to answer three simple question. what is your goal distance? when is your race? and what time do you hope to finsih said race? as shown below on a short video 

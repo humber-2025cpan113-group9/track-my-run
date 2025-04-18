@@ -127,6 +127,13 @@
       padding: 8px 10px;
     }
   }
+
+  .menu-bar {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-bg);
+    margin-right: 100px;
+  }
   
   /* ===================== */
   /*        HERO           */
@@ -178,7 +185,7 @@
     font-size: var(--font-size-base);
     margin-bottom: 15px;
   }
-  
+
   /* ===================== */
   /*        FOOTER         */
   /* ===================== */

@@ -16,6 +16,7 @@
     /* Font Sizes */
     --font-size-base: 16px;
     --font-size-nav: 16px;
+    --font-size-logo: 25px;
     --font-size-title: 28px;
     --font-size-header: 60px;
     --font-size-phrase: 50px;
@@ -34,6 +35,7 @@
     font-family: var(--font-family-body);
     font-size: var(--font-size-base);
     color: var(--primary-text);
+    padding-bottom: 80px;
   }
 
   .main {
@@ -47,8 +49,8 @@
   .nav-container {
     /* max-width: 1200px; */
     width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
+    margin: 0;
+    padding: 30 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,14 +58,15 @@
   
   .navigation {
     background-color:var(--dark-bg);
-    padding: 15px 0;
+    padding: 20px 0;
   }
   
   .logo {
-    font-size: var(--font-size-nav);
+    font-size: var(--font-size-logo);
     font-weight: bold;
     font-family: var(--font-family-header);
     cursor: pointer;
+    margin-left:100px;
   }
   
   .navigation ul {
@@ -87,7 +90,7 @@
     transition: background-color 0.2s ease-in-out;
   }
   
-  .navigation ul li a:hover {
+  #highlight:hover {
     background-color: var(--secondary-bg);
     border-radius: var(--btn-border-radius);
   }

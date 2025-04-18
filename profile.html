@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/script-profile.js"></script>
     
     <title>Profile</title>
 </head>
@@ -33,22 +33,18 @@
         </div>
         <div class="userInfo">
             <p>User Name:<input type="text"></p>
-            <p>Goal:<input type="text"></p>
             <p>Progress</p>
-            <input type = "range">
+            <input type= "range" min="1" max="7" step="1" class="days"></input>
+            <span class= "Progress" id="days-completed"> 0 days completed</span>
         </div>
+        <div id="workout"></div>
 
-        <div class="userAchievements">
-            <!-- enter gadgets not sure how to this yet -->
-        </div>
+       
 
 
     <div class = "runData">
         <p> Title </p>
         <input type="text">
-        <!--allow user to enter there own tittle -->
-
-        <!-- run data would be pulled here -->
 
         <p> Summary</p>
     </div>

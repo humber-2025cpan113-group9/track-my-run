@@ -369,14 +369,28 @@
   /*       calendar        */
   /* ===================== */
 
-  #schedule {
+.calendar‑container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 100px;
+  min-height: calc(100vh -  (60px + 60px) );  
+  box-sizing: border-box;
+  
+}
+
+.calendar‑container #schedule {
+  margin: 0 auto;
+}
+
+#schedule {
     max-width: 1000px;
-    margin: 100px auto 40px;
-    background-color: var(--dark-bg);
+    margin: auto;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     font-family: var(--font-family-body);
+    background-color: var(--dark-bg);
   }
   
   #schedule h1 {

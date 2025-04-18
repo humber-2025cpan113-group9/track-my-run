@@ -231,7 +231,7 @@
    
   
   /* ===================== */
-  /*      assessment       */
+  /*      ASSESSMENT       */
   /* ===================== */
   #fitness-quiz {
     max-width: 600px;
@@ -282,7 +282,22 @@
     background-color: #27ae60;
   }
 
-  /* ASSESSMENT PAGE TARGET DISTANCE */
+  input[type="date"],
+  input[type="time"] {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    font-family: var(--font-family-body);
+    font-size: 1rem;
+    color: var(--primary-text);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: var(--btn-border-radius);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin: 8px 0 0;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
   select {
     display: block;
     width: 100%;

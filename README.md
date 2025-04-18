@@ -18,4 +18,4 @@ we have setup an assement page where we asked the runners to answer three simple
 ## A result Demonstration:
 based on the answer we create a result where we have a breakdown table of what pace the runner need to aim per week up until race day. the runner would start at 80% of goal pace and get faster closer to race day. as shown below on a short video 
 
-![til]([https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/result.gif)
+![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/result.gif)

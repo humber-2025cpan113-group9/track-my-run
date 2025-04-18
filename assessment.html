@@ -26,7 +26,7 @@
 <!-- Assessment Section -->
 <form id="fitness-quiz">
     <!--q1-->
-    <legend><h1> 1. What is your target distance?(select one) </h1></legend>
+    <legend><h1> 1. What is your target distance? </h1></legend>
     <select id=" target-distance" required>
         <option value> ---- please choose an option ---- </option>
         <option  name="goal" value="5km" > 5k</option>
@@ -44,7 +44,10 @@
     
     <!--q3-->
     <label for="goal-time"><h1> 3. What is your goal time?</h1></label>
-    <input type="time" id="goal-time" name="time" min="00:00" max="20:00" required/>
+    <div class="goal-time-container">
+        <input type="number" id="goal-hours" name="goal-hours" min="0" max="10" placeholder="HH"> hrs
+        <input type="number" id="goal-min" name="goal-min" min="0" max="59" placeholder="MM"> mins
+    </div>
     
     <br><br>
     <button type="submit" class="btn"> Result</button>

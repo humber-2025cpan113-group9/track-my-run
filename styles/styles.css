@@ -185,6 +185,25 @@ body {
   margin-bottom: 15px;
 }
 
+
+
+.hero-content .begin-button {
+  display: block;
+  margin: 30px auto 0;
+  background-color: var(--primary-text);
+  color: #fff;
+  padding: 15px 30px;
+  font-size: var(--font-size-nav);
+  border-radius: var(--btn-border-radius);
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero-content .begin-button:hover {
+  background-color: var(--btn-hover-color);
+}
+
 /* ===================== */
 /*        FOOTER         */
 /* ===================== */

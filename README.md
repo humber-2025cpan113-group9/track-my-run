@@ -6,6 +6,8 @@ we have build a webpage that allows users to plan what pace to be targeting to m
 see below our video on the build of our webpage.
 
  ## Homepage Demonstration:
+The user journey begins on our homepage, where the objective of our website is clearly displayed: **THIS IS WHERE YOU START YOUR RUNNING JOURNEY**
+
 As stated, we've built a website that help runners plan their training schedule, helping establish accountability and structure. On the homepage navigation bar, there is a button that directs to the assessment page where the process begins.
 
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/welcome.gif)
@@ -16,6 +18,6 @@ Next, on the assessment page, we've created a simple three-question survey that 
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/assessment.gif)
 
 ## Result Demonstration:
-based on the answer we create a result where we have a breakdown table of what pace the runner need to aim per week up until race day. the runner would start at 80% of goal pace and get faster closer to race day. as shown below on a short video 
+Based on the user's input in the previous page, we then process and populate a weekly run schedule that gives a clear picture of the pace targets (minutes per mile) the runner should be aiming for, progressively moving towards their target starting at 80% the runner's capacity.
 
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/result.gif)

@@ -25,16 +25,17 @@
 <!-- Assessment Section -->
 <form id="fitness-quiz">
     <!--q1-->
-    <fieldset id=" target-distance">
-            <label><h1>1.. What is your target distance?</h1></label>
-              <select id="target-distance-select" name="goal" required>
+    
+    <fieldset id="target-distance">
+        <label for="target-distance-select"><h1>1. What is your target distance?</h1></label>
+            <select id="target-distance-select" name="goal" required>
                 <option value="" disabled selected>Select your distance…</option>
-                <option value="5km">5 K</option>
-                <option value="10km">10 K</option>
-                <option value="half-marathon">Half Marathon</option>
-                <option value="marathon">Marathon</option>
-              </select>
-              
+                <option value="5">5 K</option>
+                <option value="10">10 K</option>
+                <option value="21.1">Half Marathon</option>
+                <option value="42.2">Marathon</option>
+            </select>
+    </fieldset>
 
     <!--q2-->
   
@@ -44,7 +45,13 @@
     
     <!--q3-->
     <label for="goal-time"><h1> 3. What is your goal time?</h1></label>
-    <input type="time" id="goal-time" name="time" step="60" min="00:00" max="10:00"/>    
+
+  <div class="goal-time-container">
+        <input type="number" id="goal-hours" name="goal-hours" min="0" max="10" placeholder="HH"> hrs
+        <input type="number" id="goal-min" name="goal-min" min="0" max="59" placeholder="MM"> mins
+    </div>  
+
+  
     <br><br>
     <button type="submit" class="btn"> Result</button>
 

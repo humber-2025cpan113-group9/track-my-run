@@ -6,12 +6,12 @@ we have build a webpage that allows users to plan what pace to be targeting to m
 see below our video on the build of our webpage.
 
  ## Homepage Demonstration:
-our home page gives your a quick run down to what to expect from the assesment page. see below video for demonstration
+As stated, we've built a website that help runners plan their training schedule, helping establish accountability and structure. On the homepage navigation bar, there is a button that directs to the assessment page where the process begins.
 
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/welcome.gif)
 
  ## Assessment Demonstration:
-we have setup an assement page where we asked the runners to answer three simple question. what is your goal distance? when is your race? and what time do you hope to finsih said race? as shown below on a short video 
+Next, on the assessment page, we've created a simple three-question survey that asks the user the race type (distance) they are training for, their targe time, and the date which they wish to achieve this goal.
 
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/assessment.gif)
 

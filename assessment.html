@@ -26,14 +26,15 @@
 <!-- Assessment Section -->
 <form id="fitness-quiz">
     <!--q1-->
-    <fieldset id=" target-distance">
-        <legend><h1> 1. What is your target distance?(select one) </h1></legend>
-        <label><input type="checkbox" name="goal" value="5km" ></label> 5k</label><br>
-        <label><input type="checkbox" name="goal" value="10km" ></label> 10k </label><br>
-        <label><input type="checkbox" name="goal" value="half-marathon" ></label> Half Marathon </label><br>
-        <label><input type="checkbox" name="goal" value="marathon" ></label> Marathon</label><br>
-        <label><input type="checkbox" name="goal" value="build-fitness" ></label> Just build Fitness </label>
-    </fieldset>
+    <legend><h1> 1. What is your target distance?(select one) </h1></legend>
+    <select id=" target-distance" required>
+        <option value> ---- please choose an option ---- </option>
+        <option  name="goal" value="5km" > 5k</option>
+        <option  name="goal" value="10km" > 10k </option>
+        <option  name="goal" value="half-marathon" > Half Marathon </option>
+        <option  name="goal" value="marathon" > Marathon </option>
+        <option  name="goal" value="build-fitness" > Just build Fitness </option>
+    </select>
 
     <!--q2-->
   

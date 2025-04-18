@@ -301,3 +301,57 @@
   select option[disabled] {
     color: #999;
   }
+
+  /* RESULTS PAGE */
+  .results-container {
+    max-width: 600px;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: var(--btn-border-radius);
+    box-shadow: var(--btn-shadow);
+  }
+  
+  .results-container h1,
+  .results-container h2 {
+    font-family: var(--font-family-header);
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  
+  .results-content p {
+    font-size: 1rem;
+    color: var(--primary-text);
+    margin-bottom: 20px;
+  }
+  
+  .results-table {
+    overflow-x: auto;
+  }
+  
+  .results-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 12px;
+    border-bottom: 1px solid var(--secondary-bg);
+    text-align: left;
+    font-size: 1rem;
+    color: var(--primary-text);
+  }
+  
+  .results-table th {
+    background-color: var(--secondary-bg);
+    font-weight: 600;
+  }
+  
+  .results-table tbody tr:nth-child(even) {
+    background-color: var(--main-bg);
+  }
+  
+  .results-table tbody tr:hover {
+    background-color: var(--secondary-bg);
+  }

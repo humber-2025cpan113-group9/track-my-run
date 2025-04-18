@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track My Run</title>
+    <title>Assessment</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script defer src="scripts/script.js"></script>
 </head>
@@ -14,8 +14,9 @@
     <div class="nav-container">
       <div class="logo">Track My Run</div>
       <ul>
-        <li><a><b>Home</b></a></li>
-        <a href="login.html" class="logout-btn" id="highlight">Login</a>
+        <li><a href="index.html" id="highlight">Home</a></li>
+        <li><a><b>Assessment</b></a></li>
+        <li><a href="results.html" id="highlight">Result</a></li>
     </ul>
     </div>
 </nav>
@@ -25,8 +26,8 @@
 <!-- Assessment Section -->
 <form id="fitness-quiz">
     <!--q1-->
-    <fieldset>
-        <legend><h1> 1. What is your target distance? </h1></legend>
+    <fieldset id=" target-distance">
+        <legend><h1> 1. What is your target distance?(select one) </h1></legend>
         <label><input type="checkbox" name="goal" value="5km" ></label> 5k</label><br>
         <label><input type="checkbox" name="goal" value="10km" ></label> 10k </label><br>
         <label><input type="checkbox" name="goal" value="half-marathon" ></label> Half Marathon </label><br>
@@ -44,7 +45,7 @@
     <label for="goal-time"><h1> 3. What is your goal time?</h1></label>
     <input type="time" id="goal-time" name="time" min="00:00" max="20:00" required/>
     
-
+    <br><br>
     <button type="submit" class="btn"> Result</button>
 
 </form>

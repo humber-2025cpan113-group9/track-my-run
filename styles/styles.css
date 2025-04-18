@@ -16,6 +16,7 @@
     /* Font Sizes */
     --font-size-base: 16px;
     --font-size-nav: 16px;
+    --font-size-logo: 25px;
     --font-size-title: 28px;
     --font-size-header: 60px;
     --font-size-phrase: 50px;
@@ -34,6 +35,7 @@
     font-family: var(--font-family-body);
     font-size: var(--font-size-base);
     color: var(--primary-text);
+    padding-bottom: 80px;
   }
 
   .main {
@@ -47,22 +49,24 @@
   .nav-container {
     /* max-width: 1200px; */
     width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
+    margin: 0;
+    padding: 30 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
   .navigation {
-    padding: 15px 0;
+    background-color:var(--dark-bg);
+    padding: 20px 0;
   }
   
   .logo {
-    font-size: var(--font-size-nav);
+    font-size: var(--font-size-logo);
     font-weight: bold;
     font-family: var(--font-family-header);
     cursor: pointer;
+    margin-left:100px;
   }
   
   .navigation ul {
@@ -86,7 +90,7 @@
     transition: background-color 0.2s ease-in-out;
   }
   
-  .navigation ul li a:hover {
+  #highlight:hover {
     background-color: var(--secondary-bg);
     border-radius: var(--btn-border-radius);
   }
@@ -218,239 +222,56 @@
   }
 
 
-    /* ===================== */
-    /*       LOGIN        */
-  /* ===================== */
-
-  .register-link{
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .login-form form-common{
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--main-bg);
-    border-radius: var(--btn-border-radius);
-    box-shadow: var(--btn-shadow);
-  }
+   
   
   /* ===================== */
-  /*       FORMS           */
+  /*      assessment       */
   /* ===================== */
-  /* Common Form Styles */
-  form.form-common {
-    background-color: #fff;
-    color: var(--primary-text);
-    font-size: var(--font-size-base);
-    line-height: 1.5;
-    padding: 20px;
-    border: 2px solid var(--secondary-bg);
-    border-radius: var(--btn-border-radius);
-    max-width: 750px;
-    margin: 40px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  form.form-common h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  form.form-common label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
-  
-  form.form-common input[type="text"],
-  form.form-common input[type="email"],
-  form.form-common input[type="password"],
-  form.form-common select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid var(--secondary-bg);
-    border-radius: var(--btn-border-radius);
-    font-size: var(--font-size-base);
-    box-sizing: border-box;
-  }
-  
-  form.form-common input[type="submit"],
-  form.form-common input[type="reset"] {
-    background-color: var(--primary-text);
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
-    font-size: var(--font-size-base);
-    border-radius: var(--btn-border-radius);
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  form.form-common input[type="submit"]:hover,
-  form.form-common input[type="reset"]:hover {
-    background-color: var(--btn-hover-color);
-  }
-  
-  .form-common .container {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-  }
-  
-  /* Additional Assessment Form Styles */
-  form.assessment-form fieldset {
-    border: none;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  
-  form.assessment-form legend {
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  
-  form.assessment-form .radio-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 15px;
-  }
-  
-  form.assessment-form .radio-group label {
-    display: flex;
-    align-items: center;
-  }
-  
-  form.assessment-form input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  /* ===================== */
-  /*    USER PROFILE       */
-  /* ===================== */
-  .userProfile {
-    background-color: var(--main-bg);
-    padding: 20px;
-    border-radius: var(--btn-border-radius);
-    box-shadow: var(--btn-shadow);
+  #fitness-quiz {
     max-width: 600px;
+    background-color: #fff;
     margin: 40px auto;
-  }
-  
-  .userProfile h2 {
-    text-align: center;
-    font-size: var(--font-size-phrase);
-    margin-bottom: 20px;
-  }
-  
-  .userProfile p {
-    font-size: var(--font-size-base);
-    margin-bottom: 10px;
-  }
-  
-  .userProfile .user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #user-image img {
-    max-width: 100%;
-    max-height: 300px;
-    border-radius: 50%;
-    display: block;
-  }
-
-  
-  /* ===================== */
-  /*       calendar        */
-  /* ===================== */
-
-  #schedule {
-    max-width: 1000px;
-    margin: 100px auto 40px;
-    background-color: var(--dark-bg);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    font-family: var(--font-family-body);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
-  #schedule h1 {
-    text-align: center;
-    font-size: 28px;
+  fieldset {
+    border: none;
     margin-bottom: 20px;
-    color: var(--accent);
   }
   
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
+  legend h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
   }
   
-  thead th {
-    background-color: #f2f2f2;
-    padding: 12px;
-    font-size: 18px;
-    border-bottom: 2px solid #ddd;
-    text-align: left;
+  input {
+    margin-top: 10px;
+    font-size: 1rem;
   }
   
-  td {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    vertical-align: middle;
-  }
-  
-
-  select,
-  input[type="range"] {
-    width: 100%;
-    padding: 6px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
- 
-  .distance-marker{
+  label {
     display: block;
-    margin-top: 5px;
-    font-size: 14px;
-    color: #333;
-  }
-  
- 
-  .btn-container {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 30px;
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #34495e;
   }
   
   .btn {
-    background-color: var(--primary-text);
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #2ecc71;
     color: #fff;
     border: none;
-    font-size: var(--font-size-nav);
-    border-radius: var(--btn-border-radius);
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
   }
   
   .btn:hover {
-    background-color: #333;
+    background-color: #27ae60;
   }
-  
-  /* ===================== */
-    /* REGISTRATION */
-  /* ===================== */
-
-.register-link{
-  text-align: center;
-  padding: 20px;
-}

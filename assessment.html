@@ -46,10 +46,12 @@
     <!--q3-->
     <label for="goal-time"><h1> 3. What is your goal time?</h1></label>
 
-  <div class="goal-time-container">
-        <input type="number" id="goal-hours" name="goal-hours" min="0" max="10" placeholder="HH"> hrs
-        <input type="number" id="goal-min" name="goal-min" min="0" max="59" placeholder="MM"> mins
-    </div>  
+    <div class="goal-time-container">
+        <input type="number" id="goal-hours" name="goal-hours" min="0" max="10" placeholder="HH"
+               oninput="this.value = this.value.slice(0, 2)"> hrs
+        <input type="number" id="goal-min" name="goal-min" min="0" max="59" placeholder="MM"
+               oninput="this.value = this.value.slice(0, 2)"> mins
+      </div>
 
   
     <br><br>

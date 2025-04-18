@@ -5,7 +5,7 @@ we have build a webpage that allows users to plan what pace to be targeting to m
 
 see below our video on the build of our webpage.
 
-[ ## A home page Demonstration:](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/welcome.mp4)
+ ## A home page Demonstration:
 our home page gives your a quick run down to what to expect from the assesment page. see below video for demonstration
 
 <video src="assets/welcome.mp4" controls width="500" height="300" ></video>

@@ -1,9 +1,9 @@
 # **Track My Run**
 Welcome to our project repo page.
 
-we have build a webpage that allows users to plan what pace to be targeting to meet there goal. the website would have an assessement page where you are prompted to select goal distance, goal day, and goal time based on that information the result page would give you a week to week break down based on your goal pace.
+We have build a webpage that allows users to plan what pace to be targeting to meet their goal. The website has an assessement page where you are prompted to select goal distance, goal day, and goal time. Based on this input, the result page would give you a week to week minutes per mile target leading up to the target date..
 
-see below our video on the build of our webpage.
+See below our video on the build of our webpage.
 
  ## Homepage Demonstration:
 The user journey begins on our homepage, where the objective of our website is clearly displayed: **THIS IS WHERE YOU START YOUR RUNNING JOURNEY**

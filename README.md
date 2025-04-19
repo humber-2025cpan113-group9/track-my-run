@@ -13,7 +13,7 @@ As stated, we've built a website that help runners plan their training schedule,
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/welcome.gif)
 
  ## Assessment Demonstration:
-Next, on the assessment page, we've created a simple three-question survey that asks the user the race type (distance) they are training for, their targe time, and the date which they wish to achieve this goal.
+Next, on the assessment page, we've created a simple three-question survey that asks users the race type (distance) they are training for, their targe time, and the date which they wish to achieve this goal.
 
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/assessment.gif)
 

@@ -8,7 +8,7 @@ See below our video on the build of our webpage.
  ## Homepage Demonstration:
 The user journey begins on our homepage, where the objective of our website is clearly displayed: **THIS IS WHERE YOU START YOUR RUNNING JOURNEY**
 
-As stated, we've built a website that help runners plan their training schedule, helping establish accountability and structure. On the homepage navigation bar, there is a button that directs to the assessment page where the process begins.
+As stated, we've built a website that help runners plan their training schedule, establishing accountability and structure. On the homepage navigation bar, there is a button that directs to the assessment page where the process begins.
 
 ![til](https://github.com/humber-2025cpan113-group9/track-my-run/blob/main/assets/welcome.gif)
 

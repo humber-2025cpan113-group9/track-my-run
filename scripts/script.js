@@ -36,23 +36,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!distance || !raceDay || isNaN(goalHr) || isNaN(goalMin) ) return;
 
-   const paceMin = (goalHr *60) +goalMin ;
-   const basePace = paceMin / distance ;
+   const totalMin = (goalHr *60) +goalMin ;
+   const basePace = totalMin / distance ;
   
 
     const today = new Date();
     const race = new Date(raceDay);
     const weeks = Math.ceil((race - today) / (7 * 24 * 60 * 60 * 1000));
-    console.log(weeks)
-
-    const startPace = (basePace*0.8) + basePace;
-    const paceDecreasePerWeek = (startPace - basePace)/weeks;
-    console.log(paceDecreasePerWeek);
-
+   
+    // Validate they have enough time (minimum 4 weeks)
+    if (weeks <= 4) {
+      alert("You need at least 4 weeks to prepare properly!");
+      return;
+    }
+    const baseBuildWeek = Math.floor(weeks * 0.9);
+    const startPace = (basePace * 0.25) + basePace;
+    const paceDecreasePerWeek = (startPace - basePace *1.1)/baseBuildWeek;
+    console.log("total week ", weeks);
+   console.log( " base Build week ", baseBuildWeek);
+   console.log(" pace decrese per week", paceDecreasePerWeek);
     const tableBody = document.getElementById("plan-body");
     const template = document.getElementById("plan-row-template");
 
-    for (let i = 0; i < weeks; i++) {
+    let currentPace = startPace;
+
+    for (let i = 0; i <= weeks; i++) {
+       
+      if ( i <= baseBuildWeek){
+        currentPace -= paceDecreasePerWeek;
+        console.log("weeks to build", i , "whats the pace", currentPace);
+      }
+      else if ( i == weeks){
+        currentPace = basePace
+        console.log("weeks to build", i , "whats the pace", currentPace);
+      }
+
+      
+
+      
+
       const start = new Date(today);
       start.setDate(today.getDate() + i * 7);
 
@@ -60,8 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
       end.setDate(start.getDate() + 6);
 
       
-      const currentPace = startPace - (paceDecreasePerWeek *i);
-      const paceInMiles = currentPace * 1.609;
+    
+      const paceInMiles = currentPace;
       
       const row = template.content.cloneNode(true);
       row.querySelector(".week-number").textContent = i + 1;

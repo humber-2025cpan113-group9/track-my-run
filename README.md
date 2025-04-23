@@ -12,14 +12,14 @@ The user journey begins on our homepage, where the objective of our website is c
 
 As stated, we've built a website that help runners plan their training schedule, establishing accountability and structure. On the homepage navigation bar, there is a button that directs to the assessment page where the process begins.
 
-![til](https://cdn.jsdelivr.net/gh/humber-2025cpan113-group9/track-my-run/blob/main/assets/welcome.gif)
+![til](https://cdn.jsdelivr.net/gh/humber-2025cpan113-group9/track-my-run/main/assets/welcome.gif)
 
  ## Assessment Demonstration:
 Next, on the assessment page, we've created a simple three-question survey that asks users the race type (distance) they are training for, their targe time, and the date which they wish to achieve this goal.
 
-![til](https://cdn.jsdelivr.net/gh/humber-2025cpan113-group9/track-my-run/blob/main/assets/assessment.gif)
+![til](https://cdn.jsdelivr.net/gh/humber-2025cpan113-group9/track-my-run/main/assets/assessment.gif)
 
 ## Result Demonstration:
 Based on the user's input in the previous page, we then process and populate a weekly run schedule that gives a clear picture of the pace targets (minutes per mile) the runner should be aiming for, progressively moving towards their target starting at 80% the runner's capacity.
 
-![til](https://cdn.jsdelivr.net/gh/humber-2025cpan113-group9/track-my-run/blob/main/assets/result.gif)
+![til](https://cdn.jsdelivr.net/gh/humber-2025cpan113-group9/track-my-run/main/assets/result.gif)

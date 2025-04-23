@@ -3,7 +3,7 @@ Welcome to our project repo page.
 
 We have build a webpage that allows users to plan what pace to be targeting to meet their goal. The website has an assessement page where you are prompted to select goal distance, goal day, and goal time. Based on this input, the result page would give you a week to week minutes per mile target leading up to the target date..
 
-See below our video on the build of our webpage.
+### See below our video on the build of our webpage:
 
 [![Track My Run YouTube Tutorial](https://img.youtube.com/vi/04b8UW0TPOo/0.jpg)](https://www.youtube.com/watch?v=04b8UW0TPOo)
 

@@ -84,11 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
       
     
       const paceInMiles = currentPace * 1.60934;
+      const minutes = Math.floor(paceInMiles);
+      const seconds = Math.round((paceInMiles - minutes) * 60);
       
+
+
       const row = template.content.cloneNode(true);
       row.querySelector(".week-number").textContent = i + 1;
       row.querySelector(".date-range").textContent = `${start.toLocaleDateString()} - ${end.toLocaleDateString()}`;
-      row.querySelector(".target-pace").textContent = `${paceInMiles.toFixed(2)} min/mile`;
+      row.querySelector(".target-pace").textContent = `${minutes}:${seconds.toString().padStart(2, '0')} min/mile`;
 
       tableBody.appendChild(row);
     }

@@ -4,6 +4,7 @@ Welcome to our project repo page.
 We have build a webpage that allows users to plan what pace to be targeting to meet their goal. The website has an assessement page where you are prompted to select goal distance, goal day, and goal time. Based on this input, the result page would give you a week to week minutes per mile target leading up to the target date..
 
 See below our video on the build of our webpage.
+[youtube link] (https://youtu.be/04b8UW0TPOo)
 
  ## Homepage Demonstration:
 The user journey begins on our homepage, where the objective of our website is clearly displayed: **THIS IS WHERE YOU START YOUR RUNNING JOURNEY**

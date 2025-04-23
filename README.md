@@ -5,7 +5,7 @@ We have build a webpage that allows users to plan what pace to be targeting to m
 
 See below our video on the build of our webpage.
 
-[youtube link](https://youtu.be/04b8UW0TPOo)
+![til][youtube link](https://youtu.be/04b8UW0TPOo)
 
  ## Homepage Demonstration:
 The user journey begins on our homepage, where the objective of our website is clearly displayed: **THIS IS WHERE YOU START YOUR RUNNING JOURNEY**

@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       
     
-      const paceInMiles = currentPace;
+      const paceInMiles = currentPace * 1.60934;
       
       const row = template.content.cloneNode(true);
       row.querySelector(".week-number").textContent = i + 1;
